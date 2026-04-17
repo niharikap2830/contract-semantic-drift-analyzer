@@ -2,8 +2,21 @@
 
 **A novel legal analytics framework for detecting hidden rights erosion in contract revisions.**
 
-> Invented by Niharika Pandey — First conceived and documented: April 16, 2026.  
+> Invented by Niharika Pandey — First conceived and documented: April 16, 2026.
 > © 2026 Niharika Pandey. All rights reserved.
+
+---
+
+## About the Inventor
+
+**Niharika Pandey** is a qualified lawyer and legal analytics professional with:
+
+- **BBA.LLB (IPR Honours)** — specialization in Intellectual Property Rights law
+- **LLM in Criminal and Security Law**
+- **Senior Legal Analyst, Elevate** (legal services industry, until 2025) — contract review, drafting, and analysis at scale
+- **MS in Project Management with Analytics** (current) — Northeastern University Silicon Valley, San Jose, California
+
+This invention emerges directly from years of hands-on contract review practice. The problem of cumulative semantic drift in contract language was observed repeatedly in real client work before being formalized into the CSES measurement framework.
 
 ---
 
@@ -12,6 +25,8 @@
 When contracts get redrafted across negotiation rounds, lawyers review each change individually. A single word swap — "shall" to "may", "thirty days" to "reasonable time", "entitled to" to "eligible for consideration" — looks minor in isolation.
 
 But cumulatively? Those changes can silently strip a party of every meaningful protection in the agreement. No single change triggers an alarm. The damage is invisible until it's too late.
+
+As a lawyer who has reviewed contracts at scale, I watched this happen to real clients. And there was no tool to catch it — until now.
 
 **No existing tool measured this. Until now.**
 
@@ -35,38 +50,38 @@ It produces:
 
 ## The Core Innovation: Clause Semantic Entropy Scoring (CSES)
 
-CSES is the original measurement framework at the heart of this invention. It defines six independent dimensions of legal language erosion and aggregates them into a single composite score.
+CSES is the original measurement framework at the heart of this invention. It defines six independent dimensions of legal language erosion and aggregates them into a single composite score — built from direct observation of contract negotiation patterns in legal practice.
 
 ### The Six Dimensions
 
-**1. Obligation Weakening**  
-Measures erosion of mandatory language into discretionary language.  
-*Examples: "shall" → "may", "must" → "should", "is required to" → "is encouraged to"*  
-Each substitution converts an enforceable obligation into a non-binding preference.
+**1. Obligation Weakening**
+Measures erosion of mandatory language into discretionary language.
+*Examples: "shall" → "may", "must" → "should", "is required to" → "is encouraged to"*
+Each substitution converts an enforceable obligation into a non-binding preference. Courts consistently treat "shall" as mandatory and "may" as permissive — this distinction determines whether a cause of action exists.
 
-**2. Temporal Precision Erosion**  
-Measures replacement of specific timeframes with vague standards.  
-*Examples: "thirty (30) days" → "reasonable time", "within 48 hours" → "promptly"*  
-Specific timeframes create clear breach thresholds. Vague standards make breach nearly impossible to prove.
+**2. Temporal Precision Erosion**
+Measures replacement of specific timeframes with vague standards.
+*Examples: "thirty (30) days" → "reasonable time", "within 48 hours" → "promptly"*
+Specific timeframes create clear breach thresholds. Vague standards make breach nearly impossible to prove without costly litigation.
 
-**3. Quantifier Drift**  
-Measures substitution of precise numerical commitments with qualitative hedges.  
-*Examples: "three (3) months salary" → "reasonable severance consideration", "100% of costs" → "a portion of applicable costs"*  
-Directly reduces the measurable value of contractual entitlements.
+**3. Quantifier Drift**
+Measures substitution of precise numerical commitments with qualitative hedges.
+*Examples: "three (3) months salary" → "reasonable severance consideration", "100% of costs" → "a portion of applicable costs"*
+Directly reduces the measurable economic value of contractual entitlements.
 
-**4. Discretion Transfer**  
-Measures the shift of decision-making authority toward the counterparty.  
-*Examples: "as mutually agreed" → "as determined by the Company", "subject to arbitration" → "subject to Company policy"*  
-Captures power imbalance quietly introduced through language changes.
+**4. Discretion Transfer**
+Measures the shift of decision-making authority toward the counterparty.
+*Examples: "as mutually agreed" → "as determined by the Company", "subject to arbitration" → "subject to Company policy"*
+Formally preserves a right while rendering it practically meaningless — a right exercisable at counterparty discretion is a privilege, not a right.
 
-**5. Remedy Dilution**  
-Measures weakening or removal of enforcement mechanisms and legal remedies.  
-*Examples: removal of injunctive relief provisions, "entitled to" → "may seek", attorney's fee-shifting language removed*  
-Makes rights practically unenforceable even when they nominally remain.
+**5. Remedy Dilution**
+Measures weakening or removal of enforcement mechanisms and legal remedies.
+*Examples: removal of injunctive relief provisions, "entitled to" → "may seek", attorney's fee-shifting language removed*
+Makes rights practically unenforceable when enforcement costs exceed recoverable remedies.
 
-**6. Scope Narrowing**  
-Measures reduction in the breadth of coverage or applicability of protective clauses.  
-*Examples: narrowing of defined terms, addition of carve-outs, reduction of covered persons*  
+**6. Scope Narrowing**
+Measures reduction in the breadth of coverage or applicability of protective clauses.
+*Examples: narrowing of defined terms, addition of carve-outs, reduction of covered persons*
 Can eliminate protection entirely while appearing superficially minor.
 
 ---
@@ -79,7 +94,7 @@ A signed integer from **-100 to +100** that answers: *in whose favor did these c
 - **Negative score** → power shifted toward the protected party
 - **Zero** → neutral or balanced drift
 
-This metric is novel because it introduces **directionality** into semantic drift analysis. Existing text comparison tools measure difference — they do not identify which party benefits from each change, nor aggregate those benefits into a single directional score.
+This metric introduces **directionality** into semantic drift analysis. Existing text comparison tools measure difference — they do not identify which party benefits from that difference, nor aggregate those benefits into a single directional score.
 
 ---
 
@@ -115,7 +130,7 @@ Existing tools (Microsoft Word Track Changes, DocuSign CLM, Ironclad, Kira, Lumi
 2. User selects the clause type
 3. The CSES engine analyzes the text across all six dimensions
 4. Results are returned with composite score, dimension breakdown, findings, drift tokens, and power-shift metric
-5. User can export results or generate a negotiation strategy to restore eroded protections
+5. User can generate a negotiation strategy to restore eroded protections
 
 ---
 
@@ -125,6 +140,7 @@ Existing tools (Microsoft Word Track Changes, DocuSign CLM, Ironclad, Kira, Lumi
 - **Employment lawyers** protecting employees through repeated offer letter negotiations
 - **M&A due diligence** scanning stacks of contracts for systematic rights erosion patterns
 - **Contract managers** establishing a baseline score and tracking drift across versions over time
+- **Legal ops professionals** building drift benchmarks across contract portfolios
 - **Individuals** reviewing any contract before signing
 
 ---
@@ -141,9 +157,10 @@ This repository is published as a **defensive publication** to establish prior a
 
 ## Contact
 
-**Inventor:** Niharika Pandey  
-**Email:** niharikap.jbp@gmail.com  
-**GitHub:** [niharikap2830](https://github.com/niharikap2830)  
+**Inventor:** Niharika Pandey
+**Credentials:** BBA.LLB (IPR Hons) | LLM Criminal & Security Law | Ex-Senior Legal Analyst, Elevate | MS Project Management + Analytics, Northeastern University Silicon Valley
+**Email:** niharikap.jbp@gmail.com
+**GitHub:** [niharikap2830](https://github.com/niharikap2830)
 **Date of first publication:** April 16, 2026
 
 ---
