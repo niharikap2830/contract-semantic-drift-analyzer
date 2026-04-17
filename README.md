@@ -158,7 +158,7 @@ This repository is published as a **defensive publication** to establish prior a
 ## Contact
 
 **Inventor:** Niharika Pandey
-**Credentials:** BBA.LLB (IPR Hons) | LLM Criminal & Security Law | Ex-Senior Legal Analyst, Elevate | MS Project Management + Analytics, Northeastern University Silicon Valley
+**Credentials:** BBA.LLB (IPR Hons) | LLM Criminal & Security Law | Ex-Senior Legal Analyst | MS Project Management + Analytics, Northeastern University Silicon Valley
 **Email:** niharikap.jbp@gmail.com
 **GitHub:** [niharikap2830](https://github.com/niharikap2830)
 **Date of first publication:** April 16, 2026
